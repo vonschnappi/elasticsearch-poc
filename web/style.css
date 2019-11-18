@@ -1,0 +1,9 @@
+#results-area {
+    width: 50%;
+    float: right;
+}
+
+#search-area{
+    width: 50%;
+    float: left;
+}

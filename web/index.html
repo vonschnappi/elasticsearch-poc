@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <h1>Search for products</h1>
+    <div id="search-area">
+        <h2>Select product</h2>
+        <select id="product_type">
+            <option>Select product</option>
+        </select>
+        <h2>Select color</h2>
+        <select id="color">
+            <option>Select color</option>
+            <option value="black">black</option>
+            <option value="green">green</option>
+            <option value="blue">blue</option>
+            <option value="red">red</option>
+            <option value="yellow">yellow</option>
+            <option value="yellow">purple</option>
+            <option value="yellow">white</option>
+        </select>
+        <select id="size">
+            <option>Select size</option>
+            <option value="xs">XS</option>
+            <option value="s">Small</option>
+            <option value="l">Large</option>
+            <option value="yellow">XL</option>
+            <option value="yellow">XXL</option>
+        </select>
+        <h2>Select price range</h2>
+        From: <input type="number" name="min_price" id="min_price">
+        To: <input type="number" name="max_price" id="max_price">
+
+        <p></p>
+        <button id="search">Search</button>
+    </div>
+    <div id="results-area">
+        <h2>Search results</h2>
+        
+    </div>
+</body>
+
+</html>
