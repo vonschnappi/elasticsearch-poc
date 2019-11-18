@@ -9,8 +9,8 @@ def run():
     print('Creating data...')
     subprocess.run(["python3", "gen_product_data.py"])
 
-    products_index = open( 'data/products_index.json').read()
-    products_data = open('data/product_data.json').read()
+    products_index = open( 'products_index.json').read()
+    products_data = open('product_data.json').read()
     FNULL = open(os.devnull, 'w')
     headers = {
         "Content-Type": "application/json"
