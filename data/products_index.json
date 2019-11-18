@@ -1,0 +1,10 @@
+{
+    "mappings" : {
+        "properties" : {
+            "color" : {"type": "text"},
+            "type": {"type": "keyword"},
+            "price" : {"type": "float"},
+            "size": {"type": "text"}
+        }
+    }
+}

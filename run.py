@@ -4,16 +4,17 @@ import requests
 import time
 
 def run():
+
+    os.chdir("data")
+    print('Creating data...')
+    subprocess.run(["python3", "gen_product_data.py"])
+
     products_index = open( 'data/products_index.json').read()
     products_data = open('data/product_data.json').read()
     FNULL = open(os.devnull, 'w')
     headers = {
         "Content-Type": "application/json"
     }
-
-    os.chdir("data")
-    print('Creating data...')
-    subprocess.run(["python3", "gen_product_data.py"])
 
     os.chdir("../")
     print('Creating containers for elastic...')
