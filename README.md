@@ -20,3 +20,7 @@ Code was written in python3
 ## How to run
 Simply run the main file `run.py`
 
+## Cleaning up
+After you test it, simply ctrl + c to stop the web server
+Run `docker rm -f $(docker ps -a -q)` to remove the ES and kibana containers
+
